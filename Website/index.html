@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <link href="style.css" rel="stylesheet" />
+    <script src="scripts.js"></script>
+
+    <title>AI Artifact Playground</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!-- Timer -->
+    <div class="countdown-container">
+        <span class="countdown" id="countdown">01:00</span>
+    </div>
+
+    <h1 class="banner">AI Artifact Playground</h1>
+
+    <!-- Background Music -->
+    <audio id="background-music" autoplay loop>
+        <source src="Whimsy in the Wind.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="play-audio">Play Audio</button>
+
+    <div>
+        <p class="welcome-text"><i>Welcome! Feel free to move around the objects to customize your own <b>"zine"</b>.</i></p>
+        <p class="intro"><i>The artifacts are generated with text-to-image, image-to-3d Machine Learning models.</i></p>
+    </div>
+
+    <div><img src="assets\instruction.jpg" alt="website instruction" style="width: 600px; height: auto;"></div>
+
+    <!-- Assets -->
+    <div class="draggable" id="container">
+        <img src="assets\setting pics\part.png" class="draggable-setting" style="position: absolute; top: 5%; left: 5%;">
+        <img src="assets\setting pics\part2.png" class="draggable-setting" style="position: absolute; top: 30%; left: 30%;">
+        <img src="assets\setting pics\part3.png" class="draggable-setting" style="position: absolute; top: 40%; left: ; width: 200px;  height: auto;">
+        <img src="assets\setting pics\part4.png" class="draggable-setting" style="position: absolute; top: 20%;left: 30%;width: 200px; height: auto;">
+        <img src="assets\setting pics\part5.png" class="draggable-setting" style="position: absolute;top: 10%;left: ;width: 200px; height: auto;">
+        <img src="assets\setting pics\part6.png" class="draggable-setting" style="position: absolute;top: 30%;left: 30%;height: auto;">
+        <img src="assets\setting pics\part7.png" class="draggable-setting" style="position: absolute;top: 40%;left: ;width: 200px; height: auto;">
+        <img src="assets\setting pics\part8.png" class="draggable-setting" style="position: absolute;top: 20%;left: 30%;width: 200px; height: auto;">
+        <img src="assets\object pics\jet.png" class="draggable-setting" style="position: absolute;top: 20%;left: ;width: 200px; height: auto;">
+
+        <img src="assets\object pics\piano.png" class="draggable-large-object" style="position: absolute; top: 20%;left: 40%;">
+        <img src="assets\object pics\stove.png" class="draggable-large-object" style="position: absolute; top: 40%;left: 50%;">
+        <img src="assets\object pics\tv.png" class="draggable-large-object" style="position: absolute; top: 10%;left: 30%;">
+        <img src="assets\object pics\bed.png" class="draggable-large-object" style="position: absolute; top: 20%;left: 50%;">
+
+        <img src="assets\object pics\lamp1.png" class="draggable-small-object" style="position: absolute;top: 30%; left: 50%; width: 200px; height: auto;">
+        <img src="assets\object pics\lamp2.png" class="draggable-small-object" style="position: absolute;top: 40%; left: 70%; width: 100px; height: auto;">
+        <img src="assets\object pics\book.png" class="draggable-small-object" style="position: absolute;top: 10%; left: 50%; width: 100px; height: auto;">
+        <img src="assets\object pics\picframe.png" class="draggable-small-object" style="position: absolute; top: 20%; left: 70%; width: 100px; height: auto;">
+        <img src="assets\object pics\fishbowl.png" class="draggable-small-object" style="position: absolute; top: 30%; left: 50%; width: 100px; height: auto;">
+        <img src="assets\object pics\cat.png" class="draggable-small-object" style="position: absolute; top: 50%; left: 70%; width: 100px; height: auto;">
+        <img src="assets\object pics\spoon.png" class="draggable-small-object" style="position: absolute; top: 10%; left: 50%; width: 100px; height: auto;">
+    </div>
+
+    <p class="end"><i><b>Generative platforms:</b></p>
+    <p class="end">
+        GPT
+        <br>OpenArt
+        <br>Meshy
+        <br>Midjourney
+        <br>3D AI Studio
+        <br>Suno
+        <br>Hugging Face
+    </i></p>
+
+</body>
+
+</html>
